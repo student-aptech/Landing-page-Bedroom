@@ -1,0 +1,101 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: poppins;
+}
+.banner {
+    height: 100vh;
+    width: 100vw;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(bedroom.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.navbar {
+    width: 90%;
+    height: 10px;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar p {
+    width: 160px;
+    height: 60px;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    cursor: pointer;
+}
+.navbar ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin: 0px 17px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.navbar ul li::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+.content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align:center ;
+    color: white;
+}
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p {
+    margin:20px auto ;
+    font-weight: 500;
+    line-height: 25px;
+}
+ .content button {
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 25px;
+    font-weight: 500;
+    border: 2px solid #009688;
+    outline: none;
+    background: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.content button:hover span {
+    width: 100%;
+}
